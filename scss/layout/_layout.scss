@@ -1,0 +1,59 @@
+@use "../foundation/mixin"as m;
+@use "../foundation/variables"as v;
+
+.l-header {
+    background-color: v.$main-color;
+}
+
+.l-contents__wrapper {
+    background-color: v.$base-color;
+}
+
+.l-footer {
+    background: url(../../images/footer.png) center center /cover repeat;
+}
+
+.l-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: auto;
+    width: 87%;
+    height: 100%;
+    transform: translateX(100%);
+    transition: transform 1s ease;
+    color: v.$gray-color;
+    background-color: v.$subbase-color;
+    z-index: 100;
+
+    @include m.mq(tab) {
+        width: 44%;
+    }
+
+    @include m.mq(pc) {
+        position: absolute;
+        width: 100%;
+        transition: none;
+        transform: none;
+    }
+}
+
+.is-open {
+    overflow: hidden;
+}
+
+.is-open .l-nav {
+    transform: translateX(0);
+}
+
+.overlay::after {
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 30;
+}

@@ -1,0 +1,84 @@
+@use "../../foundation/mixin"as m;
+@use "../../foundation/variables"as v;
+
+.p-map__wrapper {
+    background-color: black;
+    z-index: 1;
+
+}
+
+.p-map {
+    background: url(../../../images/map_02.png) no-repeat center center;
+    background-size: cover;
+    //background-position: 0 650px;
+    width: 100%; //width: 1553px;
+    height: auto;
+    min-height: 649px;
+    margin-top: 134px;
+    position: relative;
+    z-index: 10;
+
+    .p-map__overlay {
+        //position: absolute;
+        color: v.$white-color;
+        width: 100%;
+        height: 60%;
+        overflow-wrap: normal;
+        background: rgba(0, 0, 0, .5);
+        padding: 40px 40px 51px 42px;
+        z-index: 20;
+
+        @include m.mq(tab) {
+            height: 100%;
+            padding: 40px 29px 40px 42px;
+        }
+
+        @include m.mq(pc) {
+            width: 60%;
+            margin: 0;
+            padding: 80px 140px 80px 120px;
+        }
+
+        h3 {
+            font-size: 3.0rem;
+
+            white-space: nowrap;
+
+            @include m.mq(pc) {
+                font-size: 3.6rem;
+            }
+
+            &::before {
+                height: 2px;
+                width: 75px;
+                bottom: -20px;
+
+                @include m.mq(pc) {
+                    bottom: -55px;
+                }
+            }
+        }
+
+        //h3
+
+        p {
+            font-size: 1.4rem;
+            font-weight: 700;
+            line-height: 33px;
+            margin-top: 40px;
+            height: auto;
+
+            @include m.mq(tab) {
+                font-size: 1.6rem;
+            }
+
+            @include m.mq(pc) {
+                margin-top: 175px;
+            }
+        }
+    }
+
+    //.p-map__overlay
+}
+
+//.p-map

@@ -1,0 +1,31 @@
+@use "../../foundation/variables"as v;
+
+.c-button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    border: 1px solid v.$gray-color;
+    background: -moz-linear-gradient(top, #F2EDE9, #DED8D3);
+    background: -webkit-linear-gradient(top, #F2EDE9, #DED8D3);
+    background: linear-gradient(to bottom, #F2EDE9, #DED8D3);
+    //vertical-align: middle;
+    text-decoration: none;
+    white-space: nowrap;
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+.c-button--roundedcorners {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 100vh;
+    border: none;
+    background: v.$white-color;
+    color: v.$gray-color;
+    vertical-align: middle;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+}

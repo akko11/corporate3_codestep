@@ -1,0 +1,1 @@
+{"version":3,"sources":["../scss/object/project/footer.scss","footer.css","../scss/foundation/_variables.scss"],"names":[],"mappings":"AAGA;EACI,aAAA;ACFJ;ADII;EACI,gBAAA;ACFR;ADIQ;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,eAAA;ACFZ;ADIY;EACI,iBAAA;EACA,WETH;ADOb;ADMY;EACI,4BAAA;ACJhB;ADSI;EACI,aAAA;EACA,uBAAA;EACA,gBAAA;EACA,iBAAA;EACA,gBAAA;EACA,WEzBK;ADkBb","file":"footer.css"}

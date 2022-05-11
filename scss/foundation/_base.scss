@@ -1,0 +1,43 @@
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', 'M+ Type-1 (general-j) Regular', sans-serif;
+    color: #121212;
+}
+
+
+a {
+    text-decoration-line: none;
+    color: inherit;
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    line-height: 1.7;
+    font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
