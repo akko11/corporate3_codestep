@@ -121,6 +121,10 @@ img {
   background-color: #FFF7EF;
 }
 
+.l-main {
+  height: auto;
+}
+
 .l-contents__wrapper {
   background-color: #FFFDFA;
 }
@@ -138,7 +142,6 @@ img {
   width: 87%;
   height: 100%;
   transform: translateX(100%);
-  transition: transform 1s ease;
   color: #707070;
   background-color: #F2EDE9;
   z-index: 100;
@@ -163,6 +166,7 @@ img {
 
 .is-open .l-nav {
   transform: translateX(0);
+  transition: transform 1s ease;
 }
 
 .overlay::after {
@@ -268,7 +272,7 @@ img {
   cursor: pointer;
 }
 
-.c-layout__grid {
+.c-layout--grid {
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -280,13 +284,13 @@ img {
   grid-template-rows: 217px 285px fit-content 150px;
 }
 @media screen and (min-width: 600px) {
-  .c-layout__grid {
+  .c-layout--grid {
     grid-template-rows: 217px 530px -webkit-fit-content 150px;
     grid-template-rows: 217px 530px fit-content 150px;
   }
 }
 @media screen and (min-width: 1025px) {
-  .c-layout__grid {
+  .c-layout--grid {
     grid-template-columns: 80% 20%;
   }
 }
@@ -324,21 +328,6 @@ img {
   }
 }
 
-/*
-.c-grid {
-    @include m.mq(sp) {}
-
-
-
-    @include m.mq(tab) {}
-
-
-    display: grid;
-    gap: 26px;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 6%;
-    margin-bottom: 50px;
-}*/
 .p-header {
   position: relative;
   display: flex;
@@ -641,71 +630,116 @@ img {
 }
 
 .p-map {
+  color: #FFF;
+  overflow-wrap: normal;
   background: url(../../../images/map_02.png) no-repeat center center;
   background-size: cover;
-  width: 100%;
   height: auto;
-  min-height: 649px;
+  min-height: 691px;
   margin-top: 134px;
+  padding: 40px 40px 51px 42px;
   position: relative;
   z-index: 10;
+  /*
+      .p-map__overlay {
+          color: v.$white-color;
+          width: 100%;
+          height: 60%;
+          //height: 415px;
+          overflow-y: visible;
+          overflow-wrap: normal;
+          background: rgba(0, 0, 0, .5);
+          padding: 40px 40px 51px 42px;
+          z-index: 20;
+
+          @include m.mq(tab) {
+              height: 100%;
+              padding: 40px 29px 40px 42px;
+          }
+
+          @include m.mq(pc) {
+              width: 60%;
+              margin: 0;
+              padding: 80px 140px 80px 120px;
+          }//.p-map__overlay
+  }
+  */
+}
+@media screen and (min-width: 600px) {
+  .p-map {
+    min-height: 415px;
+    padding: 40px 29px 40px 42px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-map {
+    min-height: 649px;
+    padding: 80px 120px;
+  }
 }
 .p-map .p-map__overlay {
-  color: #FFF;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 60%;
-  overflow-wrap: normal;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 40px 40px 51px 42px;
+  background: rgba(0, 0, 0, 0.29);
+  overflow-y: visible;
   z-index: 20;
 }
 @media screen and (min-width: 600px) {
   .p-map .p-map__overlay {
     height: 100%;
-    padding: 40px 29px 40px 42px;
   }
 }
 @media screen and (min-width: 1025px) {
   .p-map .p-map__overlay {
     width: 60%;
-    margin: 0;
-    padding: 80px 140px 80px 120px;
+    height: 100%;
   }
 }
-.p-map .p-map__overlay h3 {
+.p-map h3 {
   font-size: 3rem;
   white-space: nowrap;
+  margin-top: 40px;
+  margin-left: 42px;
+  z-index: 30;
 }
 @media screen and (min-width: 1025px) {
-  .p-map .p-map__overlay h3 {
+  .p-map h3 {
     font-size: 3.6rem;
+    margin-top: 80px;
+    margin-left: 120x;
   }
 }
-.p-map .p-map__overlay h3::before {
+.p-map h3::before {
   height: 2px;
   width: 75px;
   bottom: -20px;
 }
 @media screen and (min-width: 1025px) {
-  .p-map .p-map__overlay h3::before {
+  .p-map h3::before {
     bottom: -55px;
   }
 }
-.p-map .p-map__overlay p {
+.p-map p {
+  position: relative;
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 33px;
   margin-top: 40px;
-  height: auto;
+  z-index: 30;
 }
 @media screen and (min-width: 600px) {
-  .p-map .p-map__overlay p {
+  .p-map p {
     font-size: 1.6rem;
   }
 }
 @media screen and (min-width: 1025px) {
-  .p-map .p-map__overlay p {
-    margin-top: 175px;
+  .p-map p {
+    margin-top: 115px;
+    width: 45%;
   }
 }
 

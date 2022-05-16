@@ -1,7 +1,7 @@
 @use "../../foundation/mixin"as m;
 @use "../../foundation/variables"as v;
 
-.c-layout__grid {
+.c-layout--grid {
     position: relative;
     height: 100vh;
     width: 100vw;
@@ -53,20 +53,3 @@
         grid-column: 2;
     }
 }
-
-
-/*
-.c-grid {
-    @include m.mq(sp) {}
-
-
-
-    @include m.mq(tab) {}
-
-
-    display: grid;
-    gap: 26px;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 6%;
-    margin-bottom: 50px;
-}*/
