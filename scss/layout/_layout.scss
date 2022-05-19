@@ -13,6 +13,17 @@
     background-color: v.$base-color;
 }
 
+.l-contents {
+    position: relative;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include m.mq(pc) {
+        width: 70vw;
+    }
+}
+
 .l-footer {
     background: url(../../images/footer.png) center center /cover repeat;
 }
