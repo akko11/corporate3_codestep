@@ -1,7 +1,8 @@
 html {
     font-size: 62.5%;
-    font-family: 'Roboto', 'M+ Type-1 (general-j) Regular', sans-serif;
+    font-family: 'Roboto', 'M+ Type-1 (general-j) Regular', 'M+ C Type-1 (basic latin) Regular', sans-serif;
     color: #121212;
+    //line-height: 1.4;
 }
 
 
@@ -16,20 +17,19 @@ a {
 }
 
 p {
-    font-size: 1.6rem;
+    //font-size: 1.6rem;
     font-weight: normal;
-    line-height: 1.4;
 }
 
-ul {
-    list-style: none;
+ul,
+ol {
     margin: 0px;
     padding: 0px;
+    list-style: none;
 }
 
-
 body {
-    line-height: 1.7;
+    line-height: 1.4;
     font-size: 1.6rem;
 }
 

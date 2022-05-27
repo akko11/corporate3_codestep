@@ -19,6 +19,10 @@
     margin-left: auto;
     margin-right: auto;
 
+    @include m.mq(tab) {
+        width: 86vw;
+    }
+
     @include m.mq(pc) {
         width: 70vw;
     }

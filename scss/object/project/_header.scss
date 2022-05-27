@@ -16,30 +16,13 @@
     }
 }
 
-//.p-header
-/*
-.p-header__title h1 {
-    color: v.$gray-color;
-    font-size: 4.0rem;
-    margin-top: 40px;
-
-    @include m.mq(pc) {
-        font-size: 6.4rem;
-        margin-top: 0;
-    }
-}
-↑コンポーネントのtitleに移動
-*/
-
-//.p-header__title h1
-
 .p-search__wrapper {
     @include m.mq(sp) {
         margin: 38px 31px 40px 24px;
     }
 
     @include m.mq(tab) {
-        margin: 40px auto;
+        margin: 38px auto 40px;
     }
 
     @include m.mq(pc) {
@@ -91,13 +74,11 @@
 
     .p-search__button {
         width: 16vw;
-        font-size: 1.6rem;
-        font-weight: 700;
         height: 46px;
         margin-left: 12px;
+        color: v.$gray-color;
 
         @include m.mq(tab) {
-            //width: 16vw;
             margin-left: 13px;
         }
 
