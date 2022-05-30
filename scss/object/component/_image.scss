@@ -84,10 +84,12 @@
 
         @include m.mq(tab) {
             width: 49%;
+            //min-width: 349px;
         }
 
-        @include m.mq(tab) {
+        @include m.mq(pc) {
             width: 32%;
+            //min-width: 438px;
         }
 
     }

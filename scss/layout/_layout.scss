@@ -66,6 +66,14 @@
     transition: transform 1s ease;
 }
 
+.l-nav .nav-open {
+    transition: transform 1s ease;
+}
+
+.l-nav .nav-close {
+    transition: transform 1s ease;
+}
+
 .overlay::after {
     content: "";
     width: 100%;

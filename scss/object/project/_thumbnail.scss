@@ -48,9 +48,8 @@
         object-position: 30% 100%;
         z-index: 1;
 
-        @include m.mq(tab) {
-            width: 100%;
-            height: 500px;
+        @include m.mq(pc) {
+            height: 239px;
         }
     }
 
@@ -85,3 +84,12 @@
 }
 
 //.p-thumbnail--archive
+.p-thumbnail--single {
+    img {
+        height: 225px;
+
+        @include m.mq(tab) {
+            height: 500px;
+        }
+    }
+}

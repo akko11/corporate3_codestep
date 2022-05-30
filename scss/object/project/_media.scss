@@ -62,7 +62,7 @@
     margin-top: 10px;
 
     p {
-        width: 66vw;
+        width: 73%;
         margin-top: 10px;
     }
 
@@ -70,7 +70,7 @@
         padding: 30px 35px;
 
         p {
-            width: 34vw;
+            width: 76%;
         }
     }
 
@@ -79,7 +79,6 @@
 
         p {
             margin-top: 17px;
-            width: 26vw;
         }
 
     }
@@ -109,6 +108,7 @@
     display: block;
     margin-top: 40px;
     width: 43vw;
+    height: 42px;
     margin-left: auto;
     margin-right: auto;
 
@@ -119,5 +119,6 @@
 
     @include m.mq(pc) {
         width: 15vw;
+        height: 76px;
     }
 }

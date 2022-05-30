@@ -191,6 +191,14 @@ img {
   transition: transform 1s ease;
 }
 
+.l-nav .nav-open {
+  transition: transform 1s ease;
+}
+
+.l-nav .nav-close {
+  transition: transform 1s ease;
+}
+
 .overlay::after {
   content: "";
   width: 100%;
@@ -296,13 +304,8 @@ img {
 }
 @media screen and (min-width: 600px) {
   .c-button {
-    width: 60%;
+    width: 429px;
     height: 104px;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .c-button {
-    width: 32%;
   }
 }
 
@@ -484,7 +487,7 @@ img {
     width: 49%;
   }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1025px) {
   .c-image__gallery img {
     width: 32%;
   }
@@ -713,10 +716,9 @@ ol.c-list li:before {
      object-position: 30% 100%;
   z-index: 1;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1025px) {
   .p-thumbnail--archive img {
-    width: 100%;
-    height: 500px;
+    height: 239px;
   }
 }
 .p-thumbnail--archive h1 {
@@ -743,6 +745,15 @@ ol.c-list li:before {
     display: inline;
     vertical-align: middle;
     margin-left: 20px;
+  }
+}
+
+.p-thumbnail--single img {
+  height: 225px;
+}
+@media screen and (min-width: 600px) {
+  .p-thumbnail--single img {
+    height: 500px;
   }
 }
 
@@ -1192,7 +1203,7 @@ ol.c-list li:before {
   margin-top: 10px;
 }
 .p-media__text p {
-  width: 66vw;
+  width: 73%;
   margin-top: 10px;
 }
 @media screen and (min-width: 600px) {
@@ -1200,7 +1211,7 @@ ol.c-list li:before {
     padding: 30px 35px;
   }
   .p-media__text p {
-    width: 34vw;
+    width: 76%;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -1209,7 +1220,6 @@ ol.c-list li:before {
   }
   .p-media__text p {
     margin-top: 17px;
-    width: 26vw;
   }
 }
 
@@ -1239,6 +1249,7 @@ ol.c-list li:before {
   display: block;
   margin-top: 40px;
   width: 43vw;
+  height: 42px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1251,6 +1262,7 @@ ol.c-list li:before {
 @media screen and (min-width: 1025px) {
   .p-media__button {
     width: 15vw;
+    height: 76px;
   }
 }
 
@@ -1292,7 +1304,11 @@ ul.p-pager__pagination li.pre a, ul.p-pager__pagination li.next a {
 }
 ul.p-pager__pagination li.pre a img, ul.p-pager__pagination li.next a img {
   display: inline-block;
+}
+ul.p-pager__pagination li.pre span {
   margin-left: 7px;
+}
+ul.p-pager__pagination li.next span {
   margin-right: 7px;
 }
 
@@ -1307,7 +1323,7 @@ ul.p-pager__pagination li.pre a img, ul.p-pager__pagination li.next a img {
   ul.p-pager__pagination li a {
     display: block;
     margin-left: 15px;
-    padding: 3px 11px;
+    padding: 5px 11px;
     width: 35px;
     height: 35px;
     text-align: center;

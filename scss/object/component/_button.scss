@@ -20,12 +20,8 @@
     height: 81px;
 
     @include m.mq(tab) {
-        width: 60%;
+        width: 429px;
         height: 104px;
-    }
-
-    @include m.mq(pc) {
-        width: 32%;
     }
 
 }

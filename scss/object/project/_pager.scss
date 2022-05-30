@@ -37,10 +37,16 @@ ul.p-pager__pagination li {
 
             img {
                 display: inline-block;
-                margin-left: 7px;
-                margin-right: 7px;
             }
         }
+    }
+
+    &.pre span {
+        margin-left: 7px;
+    }
+
+    &.next span {
+        margin-right: 7px;
     }
 }
 
@@ -56,7 +62,7 @@ ul.p-pager__pagination li {
         a {
             display: block;
             margin-left: 15px;
-            padding: 3px 11px;
+            padding: 5px 11px;
             width: 35px;
             height: 35px;
             text-align: center;
@@ -68,6 +74,7 @@ ul.p-pager__pagination li {
                 color: #fff;
                 background: v.$accent-color;
             }
+
             span {
                 display: none;
             }
