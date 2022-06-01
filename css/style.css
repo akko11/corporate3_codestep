@@ -1135,6 +1135,7 @@ ol.c-list li:before {
   position: relative;
   margin-top: 178px;
   margin-left: 46px;
+  margin-bottom: 212px;
 }
 @media screen and (min-width: 600px) {
   .p-nav {
