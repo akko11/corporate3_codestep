@@ -36,12 +36,11 @@
     display: block;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -100%;
     overflow: auto;
     width: 87%;
     height: 100%;
-    transform: translateX(100%);
-    transition: transform 1s ease;
+    transition: all 1s ease;
     color: v.$gray-color;
     background-color: v.$subbase-color;
     z-index: 100;
@@ -51,10 +50,10 @@
     }
 
     @include m.mq(pc) {
-        position: absolute;
+        position: static;
         width: 100%;
-        transition: none;
-        transform: none;
+        transition: unset;
+        transform: unset;
     }
 }
 
@@ -63,8 +62,8 @@
 }
 
 .is-open .l-nav {
-    transform: translateX(0);
-    transition: transform 1s ease;
+    right: 0;
+    transition: all 1s ease;
 }
 
 .overlay::after {
@@ -73,6 +72,7 @@
     height: 100vh;
     background: rgba(0, 0, 0, .5);
     position: absolute;
+    transition: all 1s ease;
     top: 0%;
     left: 0%;
     z-index: 30;
