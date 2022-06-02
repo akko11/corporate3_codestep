@@ -163,7 +163,7 @@ img {
   overflow: auto;
   width: 87%;
   height: 100%;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
   color: #707070;
   background-color: #F2EDE9;
   z-index: 100;
@@ -188,7 +188,7 @@ img {
 
 .is-open .l-nav {
   right: 0;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 .overlay::after {
@@ -923,26 +923,27 @@ ol.c-list li:before {
   background-color: rgba(255, 255, 255, 0.8);
   color: #3C2A10;
   width: 84vw;
-  height: 162px;
+  height: auto;
+  min-height: 162px;
   margin-top: 10px;
-  padding-top: 19px;
-  padding-left: 10px;
+  padding: 19px 10px;
 }
 @media screen and (min-width: 600px) {
   .p-card01 ul li,
 .p-card02 ul li {
     width: 40vw;
-    height: 172px;
+    height: auto;
+    min-height: 172px;
   }
 }
 @media screen and (min-width: 1025px) {
   .p-card01 ul li,
 .p-card02 ul li {
     width: 30vw;
-    height: 174px;
+    height: auto;
+    min-height: 174px;
     margin-top: 20px;
-    padding-top: 17px;
-    padding-left: 19px;
+    padding: 17px 19px;
   }
 }
 .p-card01 ul li h4,

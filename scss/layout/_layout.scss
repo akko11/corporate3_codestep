@@ -40,7 +40,7 @@
     overflow: auto;
     width: 87%;
     height: 100%;
-    transition: all 1s ease;
+    transition: all .5s ease;
     color: v.$gray-color;
     background-color: v.$subbase-color;
     z-index: 100;
@@ -63,7 +63,7 @@
 
 .is-open .l-nav {
     right: 0;
-    transition: all 1s ease;
+    transition: all .5s ease;
 }
 
 .overlay::after {

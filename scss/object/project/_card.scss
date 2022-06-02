@@ -66,22 +66,23 @@
             background-color: rgba(#fff, .8);
             color: v.$brown-color;
             width: 84vw;
-            height: 162px;
+            height: auto;
+            min-height: 162px;
             margin-top: 10px;
-            padding-top: 19px;
-            padding-left: 10px;
+            padding: 19px 10px;
 
             @include m.mq(tab) {
                 width: 40vw;
-                height: 172px;
+                height: auto;
+                min-height: 172px;
             }
 
             @include m.mq(pc) {
                 width: 30vw;
-                height: 174px;
+                height: auto;
+                min-height: 174px;
                 margin-top: 20px;
-                padding-top: 17px;
-                padding-left: 19px;
+                padding: 17px 19px;
             }
 
             h4 {
