@@ -295,8 +295,8 @@ img {
   width: 100%;
   height: 81px;
 }
-.c-buttona:hover {
-  background: linear-gradient(to bottom, #DED8D3, #F2EDE9);
+.c-button:hover {
+  opacity: 0.6;
 }
 @media screen and (min-width: 600px) {
   .c-button {
