@@ -860,7 +860,7 @@ ol.c-list li:before {
   .p-card__wrapper {
     flex-direction: row;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: stretch;
     margin-top: 40px;
   }
 }
@@ -915,12 +915,17 @@ ol.c-list li:before {
 }
 
 .p-card01 {
-  margin-bottom: 20px;
   background: url(../../../images/card_01.jpg) center center/cover no-repeat;
 }
 
 .p-card02 {
   background: url(../../../images/card_02.jpg) center center/cover no-repeat;
+  margin-top: 20px;
+}
+@media screen and (min-width: 600px) {
+  .p-card02 {
+    margin-top: 0;
+  }
 }
 
 .p-card__inner {

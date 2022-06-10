@@ -10,7 +10,7 @@
     @include m.mq(tab) {
         flex-direction: row;
         justify-content: space-around;
-        align-items: flex-start;
+        align-items: stretch;
         margin-top: 40px;
     }
 
@@ -56,12 +56,16 @@
 }
 
 .p-card01 {
-    margin-bottom: 20px;
     background: url(../../../images/card_01.jpg) center center /cover no-repeat;
 }
 
 .p-card02 {
     background: url(../../../images/card_02.jpg) center center /cover no-repeat;
+    margin-top: 20px;
+
+    @include m.mq(tab) {
+        margin-top: 0;
+    }
 }
 
 .p-card__inner {
