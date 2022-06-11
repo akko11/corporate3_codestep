@@ -26,6 +26,8 @@
     height: auto;
     min-height: 642px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 
     @include m.mq(tab) {
         width: 43vw;
@@ -68,42 +70,48 @@
     }
 }
 
-.p-card__inner {
-    background-color: rgba(#fff, .8);
-    color: v.$brown-color;
-    width: 100%;
-    height: auto;
-    min-height: 162px;
-    margin-top: 10px;
-    padding: 19px 10px;
+ul.p-card__inner {
+    margin-top: auto;
 
-    @include m.mq(tab) {
-        min-height: 172px;
-    }
-
-    @include m.mq(pc) {
-        min-height: 174px;
-        margin-top: 20px;
-        padding: 17px 19px;
-    }
-
-    h4 {
-        font-size: 2.2rem;
-        font-weight: 700;
+    li {
+        background-color: rgba(#fff, .8);
+        color: v.$brown-color;
+        width: 100%;
+        height: auto;
+        min-height: 162px;
+        margin-top: 10px;
+        padding: 19px 10px;
 
         @include m.mq(tab) {
-            font-size: 2.4rem;
+            min-height: 172px;
         }
-    }
-
-    p {
-        font-size: 1.6rem;
-        margin-top: 20px;
 
         @include m.mq(pc) {
-            font-size: 1.4rem;
-            margin-top: 26px;
+            min-height: 174px;
+            margin-top: 20px;
+            padding: 17px 19px;
+        }
 
+        h4 {
+            font-size: 2.2rem;
+            font-weight: 700;
+
+            @include m.mq(tab) {
+                font-size: 2.4rem;
+            }
+        }
+
+        p {
+            font-size: 1.6rem;
+            margin-top: 20px;
+
+            @include m.mq(pc) {
+                font-size: 1.4rem;
+                margin-top: 26px;
+
+            }
         }
     }
 }
+
+//ul.p-card__inner

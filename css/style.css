@@ -877,6 +877,8 @@ ol.c-list li:before {
   height: auto;
   min-height: 642px;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 600px) {
   .p-card01,
@@ -928,7 +930,10 @@ ol.c-list li:before {
   }
 }
 
-.p-card__inner {
+ul.p-card__inner {
+  margin-top: auto;
+}
+ul.p-card__inner li {
   background-color: rgba(255, 255, 255, 0.8);
   color: #3C2A10;
   width: 100%;
@@ -938,32 +943,32 @@ ol.c-list li:before {
   padding: 19px 10px;
 }
 @media screen and (min-width: 600px) {
-  .p-card__inner {
+  ul.p-card__inner li {
     min-height: 172px;
   }
 }
 @media screen and (min-width: 1025px) {
-  .p-card__inner {
+  ul.p-card__inner li {
     min-height: 174px;
     margin-top: 20px;
     padding: 17px 19px;
   }
 }
-.p-card__inner h4 {
+ul.p-card__inner li h4 {
   font-size: 2.2rem;
   font-weight: 700;
 }
 @media screen and (min-width: 600px) {
-  .p-card__inner h4 {
+  ul.p-card__inner li h4 {
     font-size: 2.4rem;
   }
 }
-.p-card__inner p {
+ul.p-card__inner li p {
   font-size: 1.6rem;
   margin-top: 20px;
 }
 @media screen and (min-width: 1025px) {
-  .p-card__inner p {
+  ul.p-card__inner li p {
     font-size: 1.4rem;
     margin-top: 26px;
   }
