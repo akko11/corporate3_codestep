@@ -1,6 +1,6 @@
 html {
     font-size: 62.5%;
-    font-family: 'Roboto', 'M+ Type-1 (general-j) Regular', 'M+ C Type-1 (basic latin) Regular', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     color: #121212;
     //line-height: 1.4;
 }
@@ -10,9 +10,9 @@ a {
     text-decoration-line: none;
     color: inherit;
 
-    &:hover {
-        opacity: 0.6;
-    }
+    // &:hover {
+    //opacity: 0.6;
+    //}
 
 }
 
@@ -40,10 +40,11 @@ h4,
 h5,
 h6 {
     margin-top: 0;
-    margin-bottom: 0.5rem;
+    //margin-bottom: 0.5rem;
 }
 
 img {
-    vertical-align: middle;
     border-style: none;
+    max-width: 100%;
+    vertical-align: bottom;
 }

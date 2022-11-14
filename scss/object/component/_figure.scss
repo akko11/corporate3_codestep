@@ -1,0 +1,103 @@
+@use "../../foundation/mixin"as m;
+
+.c-figure--square--Photo {
+    border: 1px #FFF solid;
+    width: 100%;
+    position: relative;
+
+    a {
+        display: block;
+
+        &::after {
+            content: "";
+            position: absolute;
+            box-shadow: 0 -30px 15px -1px #2e2e2e inset;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    img {
+        max-width: 100%;
+        vertical-align: bottom;
+    }
+
+    p {
+        position: absolute;
+        color: #FFF;
+        font-size: 0.75rem;
+        bottom: 4px;
+        left: 7px;
+        z-index: 10;
+    }
+
+    @include m.mq(pc) {
+        width: 47%;
+    }
+}
+
+.c-figure--circle {
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+.c-figure--arrow {
+    width: calc(100vw - 80px);
+    height: 80px;
+    line-height: 80px;
+    background-color: #414141;
+    color: #FFF;
+    font-size: 1.4rem; //サイトによってはprojectへ
+    margin: 0 auto 60px auto;
+    position: relative;
+    text-align: center;
+
+    &::after {
+        content: "";
+        border-top: 30px solid #414141;
+        border-left: calc(50vw - 40px) solid transparent;
+        border-right: calc(50vw - 40px) solid transparent;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+    }
+
+    @include m.mq(pc) {
+        width: 200px;
+
+        &::after {
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+        }
+    }
+}
+
+.c-figure--square {
+    display: block;
+    width: 30%;
+    font-size: 1.4rem;
+    border: solid 1px #121212;
+    position: relative;
+    padding: 50px 0;
+    text-align: center;
+    transition: .1s;
+
+    img {
+        margin: 0 auto;
+    }
+
+    &::after {
+        content: "";
+        border-top: 20px solid transparent;
+        border-right: 20px solid #121212;
+        position: absolute;
+        right: 4px;
+        bottom: 4px;
+    }
+}
