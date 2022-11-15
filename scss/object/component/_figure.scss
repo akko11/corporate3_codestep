@@ -88,8 +88,16 @@
     text-align: center;
     transition: .1s;
 
+    &:hover {
+        outline: solid 3px #121212;
+    }
+
     img {
-        margin: 0 auto;
+        margin-bottom: 5px;
+    }
+
+    p {
+        margin: 0;
     }
 
     &::after {

@@ -34,7 +34,6 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
 }
 
 /* A elements that don't have a class get default styles */
@@ -47,7 +46,6 @@ a:not([class]) {
 img,
 picture {
   max-width: 100%;
-  display: block;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -98,7 +96,6 @@ ol {
 }
 
 body {
-  line-height: 1.4;
   font-size: 1.6rem;
 }
 
@@ -247,8 +244,14 @@ img {
   text-align: center;
   transition: 0.1s;
 }
+.c-figure--square:hover {
+  outline: solid 3px #121212;
+}
 .c-figure--square img {
-  margin: 0 auto;
+  margin-bottom: 5px;
+}
+.c-figure--square p {
+  margin: 0;
 }
 .c-figure--square::after {
   content: "";
@@ -323,16 +326,19 @@ ul.p-feature__list li {
   width: 30%;
 }
 
-.p-feature--circle {
+a.p-feature--circle {
   border: 1px solid #fff;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
 }
-.p-feature--circle::before {
+a.p-feature--circle::before {
   content: "";
+  display: block;
   width: 100%;
   height: 100%;
   background-color: #fff;
@@ -342,18 +348,17 @@ ul.p-feature__list li {
   opacity: 0.3;
   transition: 0.5s;
 }
-.p-feature--circle:hover::before {
-  left: 0;
-}
-.p-feature--circle::after {
-  display: block;
+a.p-feature--circle::after {
   content: "";
+  display: block;
   padding-top: 100%;
+}
+a.p-feature--circle:hover::before {
+  left: 0;
 }
 
 .p-flow {
   background: #fff;
-  padding-bottom: 80px;
 }
 
 .p-flow--step {

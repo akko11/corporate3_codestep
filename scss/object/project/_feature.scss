@@ -17,16 +17,19 @@ ul.p-feature__list {
     }
 }
 
-.p-feature--circle {
+a.p-feature--circle {
     border: 1px solid #fff;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
 
     &::before {
         content: "";
+        display: block;
         width: 100%;
         height: 100%;
         background-color: #fff;
@@ -37,16 +40,18 @@ ul.p-feature__list {
         transition: .5s;
     }
 
+    &::after {
+        content: "";
+        display: block;
+        padding-top: 100%;
+    }
+
     &:hover {
         &::before {
             left: 0;
+            //width: 100%;
         }
     }
 
-    &::after {
-        display: block;
-        content: "";
-        padding-top: 100%;
-    }
 
 }
