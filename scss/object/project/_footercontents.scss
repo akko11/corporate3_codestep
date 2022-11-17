@@ -5,6 +5,27 @@
     font-size: 1.4rem;
 }
 
+a.p-footercontents__pagetop {
+    display: block;
+    background-color: #121212;
+    border: solid 1px #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    &::after {
+        content: "";
+        border-bottom: 7px solid #fff;
+        border-right: 7px solid transparent;
+        border-left: 7px solid transparent;
+        position: relative;
+        left: 17px;
+    }
+}
+
 ul.p-footercontents__nav {
     display: flex;
     justify-content: center;
