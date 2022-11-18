@@ -1,14 +1,39 @@
-.p-headercontents {
-    padding: 40px 50px 30px 45px;
+@use "../../foundation/mixin"as m;
 
-    h1 {
-        width: 200px;
-        margin-bottom: 30px;
+.p-headercontents {
+    padding: 0;
+    background-color: #fff;
+    height: 72px;
+
+    @include m.mq(pc) {
+        padding: 40px 50px 30px 45px;
     }
+
+    h1.p-headercontents__sitetitle {
+        width: 180px;
+        margin-bottom: 0;
+        position: relative;
+        left: 18px;
+        top: 10px;
+
+        @include m.mq(pc) {
+            width: 200px;
+            margin-bottom: 30px;
+        }
+    }
+
 
     li {
         font-size: 1.4rem;
         padding: 8px 0;
+    }
+}
+
+.p-headercontents__list {
+    display: none;
+
+    @include m.mq(pc) {
+        display: block;
     }
 }
 

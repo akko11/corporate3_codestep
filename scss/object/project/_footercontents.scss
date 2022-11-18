@@ -28,6 +28,7 @@ a.p-footercontents__pagetop {
 
 ul.p-footercontents__nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 30px 0 60px 0;
 

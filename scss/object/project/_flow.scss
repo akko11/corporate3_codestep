@@ -1,34 +1,55 @@
+@use "../../foundation/mixin"as m;
+
 .p-flow {
     background: #fff;
-    //padding-bottom: 80px;
 }
+
 
 .p-flow--step {
     display: flex;
+    flex-direction: column;
     margin-top: 60px;
 
-    ol {
-        position: relative;
+    @include m.mq(pc) {
+        flex-direction: row;
+    }
+}
 
-        &::before {
-            content: "";
-            width: 50px;
-            height: 600px;
-            background-color: #fd0;
-            position: absolute;
-            top: 0;
-            left: 75px;
-        }
+ol.p-flow--step__figure {
+    position: relative;
+    margin-bottom: 80px;
+
+    //text-align: center;
+
+    &::before {
+        content: "";
+        width: 50px;
+        height: 600px;
+        background-color: #fd0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+
     }
 
-    //ol
-    dl {
-        margin-left: 10%;
-        position: relative;
+    @include m.mq(pc) {
+        margin-bottom: 0;
 
-        dd {
-            margin-bottom: 43px;
+        &::before {
+            left: 75px;
+
         }
+    }
+}
+
+dl.p-flow--step__discription {
+    margin-left: 10%;
+    position: relative;
+
+    dd {
+        margin-bottom: 43px;
     }
 }
 

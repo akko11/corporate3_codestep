@@ -1,3 +1,9 @@
+@use "../foundation/mixin"as m;
+
 .l-wrapper {
-    margin-left: 300px;
+    margin: 0;
+
+    @include m.mq(pc) {
+        margin-left: 300px;
+    }
 }
