@@ -1,11 +1,16 @@
 @use "../../foundation/mixin"as m;
 
 .p-headercontents {
+    //width: 300px;
     padding: 0;
     background-color: #fff;
     height: 72px;
+    //display: flex;
+    //flex-direction: row;
+    //justify-content: space-between;
 
     @include m.mq(pc) {
+        //flex-direction: column;
         padding: 40px 50px 30px 45px;
     }
 
@@ -30,13 +35,32 @@
 }
 
 .p-headercontents__list {
-    display: none;
+    display: block;
+    position: fixed;
+    width: 300px;
+    padding: 25px;
+    background: #fff;
+    top: 0;
+    left: -300px;
+    bottom: 0;
+    overflow-y: auto;
+    z-index: 20;
+
+    &.is-open {
+        left: 0;
+        transition: 0.5s;
+
+    }
 
     @include m.mq(pc) {
-        display: block;
+        left: 0;
     }
 }
 
 ul.p-headercontents--nav {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+
+    @include m.mq(pc) {
+        margin-bottom: 60px;
+    }
 }

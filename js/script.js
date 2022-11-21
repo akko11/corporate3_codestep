@@ -1,3 +1,13 @@
+//sp用ハンバーガーメニュー
+jQuery(function ($) {
+    $(".js-hamburger").on("click", function () {
+        $(this).next().slideToggle(200);
+        $(this).toggleClass("is-open");
+        $(".p-headercontents__list").toggleClass("is-open");
+        $(".p-hamburger__overlaymask").toggleClass("is-open");
+    });
+});
+
 //スクロール位置700pxを超えたところでpagetopを表示
 jQuery(function ($) {
     $(window).on('scroll', function () {
