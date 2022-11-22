@@ -1,8 +1,14 @@
+@use "../../foundation/mixin"as m;
+
 .p-feature {
     position: relative;
     color: #fff;
     background: rgba(0, 0, 0, .8);
-    padding-bottom: 80px;
+    padding-bottom: 60px;
+
+    @include m.mq(pc) {
+        padding-bottom: 80px;
+    }
 
     p {
         text-align: center;

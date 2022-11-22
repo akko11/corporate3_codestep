@@ -1,9 +1,13 @@
 @use "../../foundation/mixin"as m;
 
 .p-contact {
+    padding-bottom: 60px;
     position: relative;
     background: #fff;
-    padding-bottom: 80px;
+
+    @include m.mq(pc) {
+        padding-bottom: 80px;
+    }
 }
 
 .p-contact--link {

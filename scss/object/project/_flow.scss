@@ -45,20 +45,23 @@ ol.p-flow--step__figure {
 
     @include m.mq(pc) {
         margin-bottom: 0;
-
-        &::before {
-            //left: 75px;
-
-        }
     }
 }
 
 dl.p-flow--step__discription {
-    margin-left: 10%;
+    margin-left: 50px;
     position: relative;
+
+    @include m.mq(pc) {
+        margin-left: 10%;
+    }
 
     dd {
         margin-bottom: 43px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 
