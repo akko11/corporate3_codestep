@@ -51,17 +51,14 @@
         }
 
         &.is-open {
-            //color: #fff;
 
             &::before {
                 transform: translateY(10px) rotate(-315deg);
-                //top: 24px;
                 background-color: #fff;
             }
 
             &::after {
                 transform: translateY(-10px) rotate(315deg);
-                //top: 24px;
                 background-color: #fff;
 
             }
