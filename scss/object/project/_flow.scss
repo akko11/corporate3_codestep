@@ -1,6 +1,7 @@
 @use "../../foundation/mixin"as m;
 
 .p-flow {
+    position: relative;
     background: #fff;
 }
 
@@ -8,10 +9,11 @@
 .p-flow--step {
     display: flex;
     flex-direction: column;
-    margin-top: 60px;
+    margin-top: 30px;
 
     @include m.mq(pc) {
         flex-direction: row;
+        margin-top: 60px;
     }
 }
 
@@ -19,7 +21,14 @@ ol.p-flow--step__figure {
     position: relative;
     margin-bottom: 80px;
 
-    //text-align: center;
+    li {
+        margin-bottom: 60px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+    }
 
     &::before {
         content: "";
@@ -38,7 +47,7 @@ ol.p-flow--step__figure {
         margin-bottom: 0;
 
         &::before {
-            left: 75px;
+            //left: 75px;
 
         }
     }

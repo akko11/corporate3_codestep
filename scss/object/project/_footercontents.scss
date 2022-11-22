@@ -1,3 +1,5 @@
+@use "../../foundation/mixin"as m;
+
 .p-footercontents {
     background-color: #121212;
     color: #fff;
@@ -35,6 +37,11 @@ ul.p-footercontents__nav {
     li {
         padding: 0 20px;
         border-right: 1px solid #fff;
+        margin-bottom: 10px;
+
+        @include m.mq(pc) {
+            margin: 0;
+        }
 
         &:last-child {
             border: none;

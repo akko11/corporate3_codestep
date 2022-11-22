@@ -11,13 +11,13 @@
 
     @include m.mq(pc) {
         //flex-direction: column;
+        height: 100vh;
         padding: 40px 50px 30px 45px;
     }
 
     h1.p-headercontents__sitetitle {
         width: 180px;
         margin-bottom: 0;
-        position: relative;
         left: 18px;
         top: 10px;
 
@@ -29,8 +29,12 @@
 
 
     li {
+        padding: 10px 0;
         font-size: 1.4rem;
-        padding: 8px 0;
+
+        @include m.mq(pc) {
+            padding: 8px 0;
+        }
     }
 }
 
@@ -53,7 +57,9 @@
     }
 
     @include m.mq(pc) {
+        position: relative;
         left: 0;
+        padding: 0;
     }
 }
 
